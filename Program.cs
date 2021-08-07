@@ -1,5 +1,4 @@
-﻿using System;
-
+ using System;
 
 namespace ParcialI_09051812085
 {
@@ -46,8 +45,8 @@ namespace ParcialI_09051812085
             Console.WriteLine("Ingrese su libro favorito: ");
             string libro = Console.ReadLine();
 
-            Console.WriteLine("Numero de Telefono: ");
-            string telefono = Console.ReadLine();
+            Console.WriteLine("Ingrese su Link de Whatsapp: ");
+            string numero = Console.ReadLine();
 
 
             Console.WriteLine("Ingrese el link de su facebook: ");
@@ -65,30 +64,55 @@ namespace ParcialI_09051812085
 
 
             string pagina1 = @"<!DOCTYPE html>
-<html lang=""en"">
+<html lang=""es"">
 <head>
-    <meta charset=""UTF-8"">
-    <meta http-equiv=""X-UA-Compatible"" content=""IE=edge"">
-    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
-    <title>Document</title>
+<meta charset = ""UTF-8"">
+ 
+<meta http - equiv = ""X-UA-Compatible"" content = ""IE=edge"">
+<meta name = ""viewport"" content = ""width=device-width, initial-scale=1.0"">
+         
+<title> Acerca de mi </title>
+
     <STYLE type=""text/css"">
    table{
       margin: auto;
       text-align: center;
       border-style: solid;
-    
+      border-color: ""Orange"";    
   }
  </STYLE>
 </head>
-<body>
-    <H1>" + nombre + @"</H1>
-    <br>
-    <p>En esta pagina usted puede encontrar la siguiente informacion<p/>
+</head>
+            
+
+<body bgcolor=""black"">
+             
+<center>
+             
+ <font color=""cyan"">            
+<font face=""imprint mt shadow"">
+
+<h1 style="" font-size:60px"">" + nombre + @"
+                  
+ </font>
+<br>
+<font color=""Yellow"">      
+    <p>CONOCE MAS ACERCA DE MI<p/>
+<font > 
+   <font color=""White"">            
+<font face=""Times New Roman"">
+<font style="" font-size:20px"" >
+<br>
+</center>    
     <ul>
     <li>Fecha de nacimiento</li>
     <li>Nacionalidad</li>
     <li>Deporte favorito</li>
-    <p>entre otros...</p>
+<li>Comida favorita</li>
+<li>Libro favorito</li>
+<li>Edad </li>
+<li>Carrera que Estudia</li>
+    <p>Entre otros...</p>
     </ul>
     <br>
     <BR>
@@ -178,7 +202,7 @@ namespace ParcialI_09051812085
  </font>
                   
  <marquee>
-<img src=" + imagen + @" alt=""Esto es un cactus"" height=""200"">
+<img src=" + imagen + @" alt=""Esto es una imagen"" height=""400"">
  <img src=""07.jpg"" height=""200"">
 </marquee>
 <hr>
@@ -209,7 +233,7 @@ namespace ParcialI_09051812085
                                                                    
 <font color=""white"">
                                                                     
-<h2> "+  frase + @"
+<h2> " + frase + @"
  </center>
                                                                       
 </font>
@@ -277,9 +301,9 @@ box - shadow:0px 0px 20px #ddd;
 </font >
  <hr>
  <ul>
- <li> <img src =""img1.jpg"">
+ <li> <img src=" + imagen + @" alt=""Esto es una imagen"" height=""400"">
  </li>
- <li> <img  src = ""img2.jpg"" > </li>
+ 
  </ul>
  <hr>
 </center>
@@ -307,93 +331,137 @@ box - shadow:0px 0px 20px #ddd;
 </html>";
 
 
-            string pagina3 = @"<!DOCTYPE html>
-<html lang=""en"">
+            string pagina3 = @"
+ <!DOCTYPE html>
+  <html lang = ""es>
 <head>
-    <meta charset=""UTF-8"">
-    <meta http-equiv=""X-UA-Compatible"" content=""IE=edge"">
-    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
-    <title>Document</title>
-    <STYLE type=""text/css"">
-   table{
-      margin: auto;
-      text-align: center;
-      border-style: solid;
-    
-  }
- </STYLE>
+<meta charset=""UTF - 8"" >
+<meta http - equiv = ""X - UA - Compatible"" content = ""IE = edge"">
+<meta name=""viewport"" content = ""width = device - width, initial - scale = 1.0"">
+ <title> Contactame </title>
+<style type=""text / css"">
+ body {
+background: black;
+ }
+            ul {
+            width: 920px;
+            margin: 0 auto;
+            }
+            ul li {
+                list - style: none;
+            }
+            ul li img {
+                background - size:cover;
+                border - radius: 6px;
+                float:left;
+            opacity: 6;
+                margin - right: 20px;
+            height: 350px;
+            }
+            ul li img: hover {
+            opacity: 1;
+                border - radius: 200px;
+                box - shadow:0px 0px 20px #ddd;
+    }
+</style>
 </head>
-<body>
-    <H1>" + nombre + @"</H1>
-    <br>
-    <p>En esta pagina usted puede encontrar la siguiente informacion<p/>
-    <ul>
-    <li>Fecha de nacimiento</li>
-    <li>Nacionalidad</li>
-    <li>Deporte favorito</li>
-    <p>entre otros...</p>
-    </ul>
-    <br>
-    <BR>
-    <table class=""default"">
-    <tr>
-    <th>Nombre</th>
-     <td>" + nombre + @"</td>
-    </tr>
-    <tr>
-    <th>Fecha de nacimiento</th>
-     <td>" + fecha + @"</td>
-    </tr>
-    <tr>
-    <th>Edad</th>
-     <td>" + edad + @"</td>
-    </tr>
-     <tr>
-    <th>Nacionalidad</th>
-     <td>" + nacionalidad + @"</td>
-    </tr>
-    <tr>
-    <th>Profesion</th>
-     <td>" + profesion + @"</td>
-    </tr>
-     <tr>
-    <th>Carrera</th>
-     <td>" + carrera + @"</td>
-    </tr>
-        <tr>
-    <th>Hobbies</th>
-     <td>" + hobies + @"</td>
-    </tr>
-    <tr>
-    <th>Deportes</th>
-     <td>" + deporte + @"</td>
-    </tr>
-        <tr>
-    <th>Comida</th>
-     <td>" + comida + @"</td>
-    </tr>
-        <tr>
-    <th>Logros</th>
-     <td>" + logros + @"</td>
-    </tr>
-        <tr>
-    <th>Frace de vida</th>
-     <td>" + frase + @"</td>
-    </tr>
-        <tr>
-    <th>Lugares</th>
-     <td>" + lugares + @"</td>
-    </tr>
-        <tr>
-    <th>Libro</th>
-     <td>" + libro + @"</td>
-    </tr>
-    
-    </table>
 
-    <a href=""index.html"">ir a Principal</a>
-</body>
-</html>";
+<body bgcolor=""black"">
+   <center>
+   <h1 style=""color: rgb(236, 146, 229); font - size:80px; font - family:Georgia"" > **Contactame* *
+            </font>
+            
+
+
+                 <font color=""cyan"">
+  
+
+      <font face = ""imprint mt shadow"">
+   
+       <h1> ***********************************************************************************
+   
+       </font>
+   
+
+       <hr>
+   
+       <ul>
+   
+           <a href ="+instagram+@" target=""_blank"" style=""color:rgb(240, 105, 51)""> <li><img src = ""in.png"" height=""200""></li></a>
+           
+           <a href =" + facebook + @" target=""_blank"" style=""color:rgb(18, 32, 231)""><li> <img src=""fb.png"" height=""50""></li></a>
+           <a href =" + numero + @"target=""_blank"" style=""color:rgb(151, 230, 24)"">  <li>  <img src = ""wa.png"" height=""50""> </li></a>
+           <a href = " + correo + @" > <li> <img src=""co.png"" height=""50""></li></a>
+                                       
+
+                                           </ul>
+                                       
+                                           <font color= ""black"">
+                                        
+                                            <p>.</p>
+                                        
+                                            <p>.</p>
+                                        
+                                            <p>.</p>
+                                        </font>
+                                        
+                                            </center>
+                                        <center>
+                                        
+                                            <font face=""Comic Sans MS"">
+                                         
+                                             <font color=""white"">
+                                          
+
+                                                  <a href=""https://www.instagram.com/jeniifercorado/?hl=es"" target=""_blank"" style = ""color:rgb(240, 105, 51)""> Instagram: " + nombre + @" </a>
+                                              
+                                                      <a href=""https://www.facebook.com/jenni.corado/"" target = ""_blank"" style=""color:rgb(18, 32, 231)""> FB: " + nombre + @" </a>
+                                                   
+                                                           <a href =""https://wa.me/50230969276?"" target = ""_blank"" styl =""color:rgb(151, 230, 24)""> Whatsapp:  " + nombre + @" </a>
+                                                       
+                                                               <a href = ""mailto:jcoradoc5@miumg.edu.gt"" target = ""_blank"" style = ""color:rgb(230, 24, 24)"" > Enviar correo a " + nombre + @" </a>
+                                                            
+                                                                    <font color =""cyan"">
+                                                             
+
+                                                                 <font face=""imprint mt shadow"">
+                                                              
+                                                                      <h1> ***********************************************************************************
+                                                              
+                                                                  </font>
+                                                              </center>
+                                                              
+                                                                  <center>
+                                                              
+                                                                  <font face=""Comic Sans MS"">
+                                                               
+                                                                   <font color = ""white"">
+                                                                
+                                                                    <h2>¡Contactame!
+                                                                      </center>
+                                                                  
+                                                                      </font>
+                                                                  
+
+                                                                      <hr>
+                                                                  
+
+                                                                      </p>
+                                                                  
+
+                                                                      <a href=""index.html"" target =""_blank"" style = ""color:bisque"" > Ir a la pagina de inicio </a>
+                                                                      
+                                                                           <hr>
+                                                                      
+
+
+
+                                                                          </body>
+                                                                      
+
+
+
+                                                                          </html>";
 
             System.IO.File.WriteAllText(@"C:\tmp\ParcialI\acerca.html", pagina1);
             System.IO.File.WriteAllText(@"C:\tmp\ParcialI\index.html", pagina);
@@ -404,3 +472,5 @@ box - shadow:0px 0px 20px #ddd;
         }
     }
 }
+
+    
