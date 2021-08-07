@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace ParcialI_09051812085
 {
     class Program
@@ -15,8 +16,8 @@ namespace ParcialI_09051812085
             Console.WriteLine("Ingrese su nacinalidad: ");
             string nacionalidad = Console.ReadLine();
 
-            Console.WriteLine("Ingrese su profecion: ");
-            string profecion = Console.ReadLine();
+            Console.WriteLine("Ingrese su profesion: ");
+            string profesion = Console.ReadLine();
 
             Console.WriteLine("Ingrese su carrera de estudio: ");
             string carrera = Console.ReadLine();
@@ -36,14 +37,31 @@ namespace ParcialI_09051812085
             Console.WriteLine("Ingrese logros alcanzados: ");
             string logros = Console.ReadLine();
 
-            Console.WriteLine("Ingrese frace que aplica a su vida: ");
-            string frace = Console.ReadLine();
+            Console.WriteLine("Ingrese frase que aplica a su vida: ");
+            string frase = Console.ReadLine();
 
             Console.WriteLine("Ingrese lugares que ha visitado : ");
             string lugares = Console.ReadLine();
 
             Console.WriteLine("Ingrese su libro favorito: ");
             string libro = Console.ReadLine();
+
+            Console.WriteLine("Numero de Telefono: ");
+            string telefono = Console.ReadLine();
+
+
+            Console.WriteLine("Ingrese el link de su facebook: ");
+            string facebook = Console.ReadLine();
+
+            Console.WriteLine("Ingrese el link de su instagram: ");
+            string instagram = Console.ReadLine();
+
+            Console.WriteLine("Ingrese su correo electronico: ");
+            string correo = Console.ReadLine();
+
+
+            Console.WriteLine("Ingrese la direccion de su fotografia: ");
+            string imagen = Console.ReadLine();
 
 
             string pagina1 = @"<!DOCTYPE html>
@@ -93,7 +111,7 @@ namespace ParcialI_09051812085
     </tr>
     <tr>
     <th>Profesion</th>
-     <td>" + profecion + @"</td>
+     <td>" + profesion + @"</td>
     </tr>
      <tr>
     <th>Carrera</th>
@@ -117,7 +135,7 @@ namespace ParcialI_09051812085
     </tr>
         <tr>
     <th>Frace de vida</th>
-     <td>" + frace + @"</td>
+     <td>" + frase + @"</td>
     </tr>
         <tr>
     <th>Lugares</th>
@@ -135,27 +153,252 @@ namespace ParcialI_09051812085
 </html>";
 
 
-            string pagina = @"<!DOCTYPE html>
+            string pagina = @"
+<!DOCTYPE html>
+<html lang=""es"">
+<head>
+<meta charset = ""UTF-8"">
+ 
+<meta http - equiv = ""X-UA-Compatible"" content = ""IE=edge"">
+<meta name = ""viewport"" content = ""width=device-width, initial-scale=1.0"">
+         
+<title> Biografia  </title>
+</head>
+            
+
+<body bgcolor=""black"">
+             
+<center>
+             
+ <font color=""cyan"">            
+<font face=""imprint mt shadow"">
+
+<h1 style="" font-size:60px"">" + nombre + @"
+                  
+ </font>
+                  
+ <marquee>
+<img src=" + imagen + @" alt=""Esto es un cactus"" height=""200"">
+ <img src=""07.jpg"" height=""200"">
+</marquee>
+<hr>
+</center>
+ <font face=""Comic Sans MS"">
+<font color=""white"">
+ <header>
+<p> <h3>*Estudiante " + carrera + @"
+  </h3>
+ </p>
+  <p>  <h3>*" + profesion + @"
+</h3>
+ </p>
+  <p>  <h3>*" + nacionalidad + @"
+ </h3>
+  </p>
+ <p>  <h3> *Nacio un " + fecha + @"
+ </h3>
+ </p>
+ </header>
+<font color=""cyan"">
+ <font face=""imprint mt shadow"">
+<h1> ********************************************************************************
+  </font>
+<center>
+                                                                  
+ <font face=""Comic Sans MS"">
+                                                                   
+<font color=""white"">
+                                                                    
+<h2> "+  frase + @"
+ </center>
+                                                                      
+</font>
+                                                                      
+
+<hr>
+                                                                      
+
+</p>
+                                                                      
+
+<a href=""logros.html"" target = ""_blank"" style = ""color:bisque"" > Logros Optenidos </ a>
+                                                                          
+ <hr>
+                                                                          
+ <a href=""acerca.html"" target = ""_blank "" style = ""color:bisque"" > Conoce mas acerca de mi</ a>
+                                                                            
+<hr>
+                                                                            
+<a href=""contacto.html""target = ""_blank"" style = ""color:bisque"" > Contactame </ a>
+  
+<hr>
+                                                                   
+                                                                                       <a href=""info.html"">ir a contenido</a>
+</body>
+</html>";
+
+            string pagina2 = @"<!DOCTYPE html>
+<html lang=""es>
+<head>
+<meta charset = ""UTF-8"">
+<meta http - equiv = ""X-UA-Compatible"" content = ""IE=edge"">
+<meta name = ""viewport"" content = ""width=device-width, initial-scale=1.0"">
+<title> Logros Jenifer Corado </title>
+<style type=""text/css"">
+body {
+background: black;
+}
+ul {
+width: 920px;
+margin: 0 auto;
+ }
+ ul li {
+ list - style: none;
+}
+ul li img {
+background - size:cover;
+ border - radius: 6px;
+float:left;
+opacity: 6;
+margin - right: 20px;
+ height: 350px;
+}
+ul li img: hover {
+ opacity: 1;
+ border - radius: 200px;
+box - shadow:0px 0px 20px #ddd;
+    }
+</style>
+</head>
+
+<body bgcolor=""black"">
+<center>
+<h1 style=""color:rgb(236, 146, 229); font-size:80px; font-family:Georgia""> **Logros Obtenidos * *
+</font >
+ <hr>
+ <ul>
+ <li> <img src =""img1.jpg"">
+ </li>
+ <li> <img  src = ""img2.jpg"" > </li>
+ </ul>
+ <hr>
+</center>
+<font face = ""Times New Roman"">
+ <font color = ""white"">
+ <p> <h3> *
+ </p>
+ 
+ <hr>
+ <font color=""yellow"">
+<font face=""imprint mt shadow"">
+<h1> *******************************************************************************
+ </font>
+ <center>
+ <font face=""Comic Sans MS"">
+   <font color=""white"">
+ <h2> Los Limites los pones Tú
+ </center>
+ </font>
+   <hr>
+</p>
+ <a href =""index.html"" target = ""_blank"" style = ""color:lightsalmon"" > Ir a pagina Principal </a>
+ <hr>
+</body>
+</html>";
+
+
+            string pagina3 = @"<!DOCTYPE html>
 <html lang=""en"">
 <head>
     <meta charset=""UTF-8"">
     <meta http-equiv=""X-UA-Compatible"" content=""IE=edge"">
     <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
     <title>Document</title>
+    <STYLE type=""text/css"">
+   table{
+      margin: auto;
+      text-align: center;
+      border-style: solid;
+    
+  }
+ </STYLE>
 </head>
 <body>
-    <h1 algin = ""center"">" + nombre + @"</h1>
+    <H1>" + nombre + @"</H1>
     <br>
-    <P>Conoce mas acerca de " + nombre + @"</P>
+    <p>En esta pagina usted puede encontrar la siguiente informacion<p/>
+    <ul>
+    <li>Fecha de nacimiento</li>
+    <li>Nacionalidad</li>
+    <li>Deporte favorito</li>
+    <p>entre otros...</p>
+    </ul>
+    <br>
     <BR>
-        <a href=""info.html"">ir a contenido</a>
+    <table class=""default"">
+    <tr>
+    <th>Nombre</th>
+     <td>" + nombre + @"</td>
+    </tr>
+    <tr>
+    <th>Fecha de nacimiento</th>
+     <td>" + fecha + @"</td>
+    </tr>
+    <tr>
+    <th>Edad</th>
+     <td>" + edad + @"</td>
+    </tr>
+     <tr>
+    <th>Nacionalidad</th>
+     <td>" + nacionalidad + @"</td>
+    </tr>
+    <tr>
+    <th>Profesion</th>
+     <td>" + profesion + @"</td>
+    </tr>
+     <tr>
+    <th>Carrera</th>
+     <td>" + carrera + @"</td>
+    </tr>
+        <tr>
+    <th>Hobbies</th>
+     <td>" + hobies + @"</td>
+    </tr>
+    <tr>
+    <th>Deportes</th>
+     <td>" + deporte + @"</td>
+    </tr>
+        <tr>
+    <th>Comida</th>
+     <td>" + comida + @"</td>
+    </tr>
+        <tr>
+    <th>Logros</th>
+     <td>" + logros + @"</td>
+    </tr>
+        <tr>
+    <th>Frace de vida</th>
+     <td>" + frase + @"</td>
+    </tr>
+        <tr>
+    <th>Lugares</th>
+     <td>" + lugares + @"</td>
+    </tr>
+        <tr>
+    <th>Libro</th>
+     <td>" + libro + @"</td>
+    </tr>
+    
+    </table>
+
+    <a href=""index.html"">ir a Principal</a>
 </body>
 </html>";
 
-
-            System.IO.File.WriteAllText(@"C:\tmp\ParcialI\info.html", pagina1);
+            System.IO.File.WriteAllText(@"C:\tmp\ParcialI\acerca.html", pagina1);
             System.IO.File.WriteAllText(@"C:\tmp\ParcialI\index.html", pagina);
-
+            System.IO.File.WriteAllText(@"C:\tmp\ParcialI\logros.html", pagina2);
+            System.IO.File.WriteAllText(@"C:\tmp\ParcialI\contacto.html", pagina3);
             System.Diagnostics.Process.Start(@"C:\Program Files\Google\Chrome\Application\chrome.exe", @"C:\tmp\ParcialI\index.html");
             Console.WriteLine("Hello World!");
         }
